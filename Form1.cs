@@ -20,11 +20,11 @@ namespace WinFormsApp1
         }
         void Painter2()
         {
-            brush = Brushes.White;
+            brush = Brushes.DarkViolet;
             lock (locker)
             {
                 Graphics graphics = CreateGraphics();
-                graphics.FillEllipse(brush, 20, 20, 100, 100);
+                graphics.FillPie(brush, 60, 60, 100, 100, 20, 20);
                 graphics.Dispose();
             }
         }
